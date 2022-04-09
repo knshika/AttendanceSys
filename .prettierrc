@@ -1,4 +1,6 @@
 {
-  "semi": false,
-  "indent": "tab"
+	"semi": false,
+	"indent": "tab",
+	"tabWidth": 2
 }
+ 
