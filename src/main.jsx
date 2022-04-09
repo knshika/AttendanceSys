@@ -3,6 +3,7 @@ import ReactDOM from "react-dom"
 import "twind/shim"
 import { setup } from "twind"
 import App from "./App"
+import { AuthProvider } from "./context/AuthContext"
 
 setup({
 	theme: {
@@ -16,7 +17,9 @@ setup({
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<AuthProvider>
+			<App />
+		</AuthProvider>
 	</React.StrictMode>,
 	document.getElementById("root")
 )
